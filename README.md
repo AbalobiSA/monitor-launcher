@@ -12,8 +12,7 @@ Abalobi Monitor - Ionic app for launching ODK / Telegram / Weather etc
     cordova plugin add cordova-plugin-inappbrowser 
     cordova plugin add com.lampa.startapp
     ionic plugin add https://github.com/apache/cordova-plugin-whitelist.git 
-    cordova plugin add cordova-plugin-splashscreen
-	cordova plugin add https://github.com/whiteoctober/cordova-plugin-app-version.git
+    cordova plugin add https://github.com/whiteoctober/cordova-plugin-app-version.git
 	
     ```
 
