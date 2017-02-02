@@ -1,8 +1,17 @@
 angular.module('app.routes', [])
 
-.config(function($stateProvider, $ionicConfigProvider, $urlRouterProvider) {
+.config(function($stateProvider, $ionicConfigProvider, $urlRouterProvider, $translateProvider) {
 
     $ionicConfigProvider.scrolling.jsScrolling(false);
+
+    $translateProvider.useStaticFilesLoader({
+        prefix: 'data/locale-',
+        suffix: '.json'
+    });
+
+    $translateProvider.preferredLanguage('en');
+    $translateProvider.fallbackLanguage("en");
+    $translateProvider.useSanitizeValueStrategy('sanitize');
 
     // Ionic uses AngularUI Router which uses the concept of states
     // Learn more here: https://github.com/angular-ui/ui-router
@@ -14,8 +23,18 @@ angular.module('app.routes', [])
 
     .state('home', {
         url: '/home',
-        templateUrl: 'templates/home.html',
-        controller: 'MyCtrl'
+        templateUrl: 'components/home/home.html',
+        controller: 'homeCtrl'
+    })
+    .state('settings', {
+        url: '/settings',
+        templateUrl: 'components/settings/settings.html',
+        controller: 'settingsCtrl'
+    })
+    .state('app_settings', {
+        url: '/app_settings',
+        templateUrl: 'components/app_settings/app_settings.html',
+        controller: 'app_settingsCtrl'
     })
 
     /*.state('settings', {
