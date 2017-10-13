@@ -1,4 +1,8 @@
 {
   "name": "Abalobi",
-  "app_id": "b726bff8"
+  "app_id": "b726bff8",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic1"
 }

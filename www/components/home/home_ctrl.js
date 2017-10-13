@@ -4,19 +4,15 @@ angular.module('app.controllers').controller('homeCtrl', function($scope, $cordo
 
 
         document.addEventListener("deviceready", function() {
-
             $cordovaAppVersion.getVersionNumber().then(function(version) {
                 $scope.appVersion = version;
             });
 
             console.log("VERSION SET FROM LISTENER");
 
-
         }, false);
 
         $scope.$on('$ionicView.enter', function() {
-
-
             //Set the app version
             try {
                 $cordovaAppVersion.getVersionNumber().then(function(version) {
@@ -40,7 +36,7 @@ angular.module('app.controllers').controller('homeCtrl', function($scope, $cordo
         $scope.startODK = function() {
 
             var sApp = startApp.set({ /* params */
-                "package": "org.opendatakit.survey.android",
+                "package": "com.abalobi.monitor_survey",
                 "intentstart": "startActivity"
             }, { /* extras */ });
 
