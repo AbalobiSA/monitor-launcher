@@ -43,7 +43,7 @@ angular.module('app.controllers').controller('homeCtrl', function($scope, $cordo
             sApp.check(function(values) { /* success */
                 console.log(values);
             }, function(error) { /* fail */
-                var x = window.alert("You need OpenDataKit to log your catch, but it is not installed. Please install it.");
+                var x = window.alert("You need Abalobi Monitor Survey to log your catch, but it is not installed. Please install it.");
             });
 
 

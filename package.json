@@ -1,9 +1,8 @@
 {
     "name": "ablb-monitor-launcher",
-    "version": "1.4.0",
-    "description": "Abalobi: An Ionic project",
+    "version": "1.4.1",
+    "description": "Abalobi Monitor Launcher",
     "dependencies": {
-        "ccom.lampa.startapp": "0.1.4",
         "com.borismus.webintent": "~1.0.0",
         "com.lampa.startapp": "^0.1.4",
         "cordova-android": "^6.3.0",
